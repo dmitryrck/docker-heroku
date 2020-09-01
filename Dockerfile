@@ -1,3 +1,9 @@
-from node
+from ubuntu
 
-run npm install -g heroku
+env \
+  DEBIAN_FRONTEND=noninteractive \
+  LANG=en_US.UTF-8
+
+run \
+  apt update && apt install -y curl && \
+  curl https://cli-assets.heroku.com/install.sh | sh

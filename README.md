@@ -2,14 +2,17 @@
 
 Heroku CLI using Docker.
 
-Run:
+Reference: https://devcenter.heroku.com/articles/heroku-cli
 
-```terminal
+## Running
+
+```shell
 $ docker run --rm -it -v heroku_home:/root dmitryrck/heroku bash
+(docker)$ heroku login
 ```
 
 If you need to authenticate with other account use:
 
-```terminal
+```shell
 $ docker run --rm -it -v heroku_work:/root dmitryrck/heroku bash
 ```
